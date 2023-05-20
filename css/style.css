@@ -273,4 +273,16 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.art-critics-item-block {
+  margin-top: 25px;
+}
+.art-critics-item-block img {
+  margin-right: 25px;
+}
+
+.ARTISTS {
+  margin-top: 70px !important;
+  margin-bottom: 300px;
+}
+
 /*# sourceMappingURL=style.css.map */
