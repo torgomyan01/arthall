@@ -37,6 +37,22 @@
     content: "\f2bb"
 }
 
+.fa-pen:before {
+    content: "\f304"
+}
+
+.fa-circle-minus:before {
+    content: "\f056"
+}
+
+.fa-trash-can:before {
+    content: "\f2ed"
+}
+
+.fa-check:before {
+    content: "\f00c"
+}
+
 
 /*---------------------------------*/
 

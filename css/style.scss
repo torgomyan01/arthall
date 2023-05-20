@@ -280,6 +280,161 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.breadcrumb{
+  &-item{
+    a{
+      font-weight: 700;
+      font-size: 0.875rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+  }
+}
+
+.user-profile-name{
+  font-weight: 700;
+  font-size: 2.25rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+  margin-bottom: 0;
+}
+.user-profile-position{
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 2.9375rem;
+  letter-spacing: 0.0625rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+}
+
+.def-input{
+  .form-label{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.9375rem;
+    letter-spacing: 0.0625rem;
+    color: #000000;
+  }
+  .form-control{
+    height: 58px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+}
+
+.accordion-profile{
+  .accordion-item{
+    border: 0;
+    margin-bottom: 1.5625rem;
+  }
+  .accordion-header{
+    border: 0 solid #fff !important;
+    box-shadow: unset !important;
+    .accordion-button{
+      border: 0 !important;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 2.9375rem;
+      letter-spacing: 0.0625rem;
+      color: #000000;
+      padding: 0;
+      background: #fff;
+      outline: unset;
+      box-shadow: unset;
+      &:after{
+        display: none;
+      }
+
+      &[aria-expanded="true"]{
+        .fa-circle-minus{
+          display: inline-block;
+        }
+        .fa-circle-plus{
+          display: none;
+        }
+      }
+
+      .fa-circle-minus{
+        display: none;
+      }
+    }
+  }
+}
+
+.profile-work-item{
+  width: 100%;
+  @include bg;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  margin-bottom: 0.6875rem;
+
+  &:hover{
+    .profile-work-item-body{
+      opacity: 1;
+    }
+  }
+  &-body{
+    width: 100%;
+    height: 100%;
+    @include flex('c', 'c');
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.65);
+    transition: 0.3s;
+    opacity: 0;
+    
+  }
+  &-title{
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.0625rem;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+  &-year{
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.0625rem;
+    color: #FFFFFF;
+  }
+}
+
+.edit-btn{
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #FFFFFF;
+  border-radius: 50%;
+  @include flex('c', 'c');
+  color: #1C274C;
+
+  &:hover{
+    background: #c0bfbf;
+  }
+  &.remove{
+    color: #FF4343;
+  }
+}
+
+.profile-work-title{
+  font-weight: 700;
+  font-size: 1.5625rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+}
+
+.add-work{
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  color: #000000;
+}
+
+.check-btn{
+  height: 58px;
+  width: 58px;
+}
+
 
 // Art-cristcs.html
 
