@@ -66,7 +66,7 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-.c-red{
+.c-red {
   color: #FF4343;
 }
 
@@ -143,7 +143,7 @@
   border-bottom: 0;
 }
 
-.nav-link{
+.nav-link {
   font-weight: 600;
   font-size: 1.375rem;
   line-height: 2.9375rem;
@@ -155,7 +155,7 @@
   margin-right: 2.3125rem;
 
 
-  &:hover, &:focus, &:active, &:target, &:visited, &:focus-visible, &:focus-within{
+  &:hover, &:focus, &:active, &:target, &:visited, &:focus-visible, &:focus-within {
     border: 0 !important;
   }
 
@@ -165,7 +165,7 @@
   }
 }
 
-.section-title{
+.section-title {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 2.9375rem;
@@ -174,17 +174,18 @@
   margin-bottom: 2.875rem;
 }
 
-.my-work-item{
+.my-work-item {
   width: 100%;
   height: auto;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     .my-work-item-img {
-        transform: scale(1.05);
+      transform: scale(1.05);
     }
   }
-  &-img{
+
+  &-img {
     height: 18.75rem;
     border-radius: 0.625rem;
     filter: drop-shadow(0px 0px 23px rgba(0, 0, 0, 0.25));
@@ -192,7 +193,8 @@
     @include bg;
     transform: scale(1);
     transition: 0.3s;
-    &-rate{
+
+    &-rate {
       background: rgba(0, 0, 0, 0.5);
       backdrop-filter: blur(8px);
       border-radius: 0.375rem;
@@ -205,12 +207,14 @@
       line-height: 2.9375rem;
       letter-spacing: 0.0625rem;
       color: #E9E9E9;
-      i{
+
+      i {
         color: #FFCF55;
       }
     }
   }
-  &-title{
+
+  &-title {
     font-weight: 600;
     font-size: 1.375rem;
     line-height: 2.9375rem;
@@ -219,14 +223,16 @@
     margin-top: 10px;
     margin-bottom: 0;
   }
-  &-year{
+
+  &-year {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2.9375rem;
     letter-spacing: 0.0625rem;
     color: #000000;
   }
-  &-text{
+
+  &-text {
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 2.25rem;
@@ -237,7 +243,8 @@
   }
 }
 
-.art-critics-item{
+
+.art-critics-item {
   background: #FFFFFF;
   border-radius: 0.75rem;
   box-shadow: 0 0 6px #d7d6d6;
@@ -246,25 +253,28 @@
   height: 100%;
   @include flex('s', 's');
 
-  img{
+  img {
     background: #D9D9D9;
     border-radius: 8px;
     margin-bottom: 0.625rem;
   }
-  @media (max-width: 475px){
+
+  @media (max-width: 475px) {
     flex-direction: column;
-    img{
+    img {
       margin-bottom: 0.9375rem;
     }
   }
-  &-name{
+
+  &-name {
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: 0.0625rem;
     color: #000000;
     margin-top: -5px;
   }
-  &-block{
+
+  &-block {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.375rem;
@@ -272,22 +282,23 @@
     color: #000000;
     @include flex('s', 's');
     margin-bottom: 0.9375rem;
-    i{
+
+    i {
       margin-right: 0.5625rem;
       margin-top: 0.25rem;
     }
   }
 }
 
-.btn-outline-dark{
+.btn-outline-dark {
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 9px;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.breadcrumb{
-  &-item{
-    a{
+.breadcrumb {
+  &-item {
+    a {
       font-weight: 700;
       font-size: 0.875rem;
       letter-spacing: 1px;
@@ -297,14 +308,15 @@
   }
 }
 
-.user-profile-name{
+.user-profile-name {
   font-weight: 700;
   font-size: 2.25rem;
   letter-spacing: 0.0625rem;
   color: #000000;
   margin-bottom: 0;
 }
-.user-profile-position{
+
+.user-profile-position {
   font-weight: 700;
   font-size: 1.375rem;
   line-height: 2.9375rem;
@@ -313,15 +325,16 @@
   margin-bottom: 0;
 }
 
-.def-input{
-  .form-label{
+.def-input {
+  .form-label {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 2.9375rem;
     letter-spacing: 0.0625rem;
     color: #000000;
   }
-  .form-control{
+
+  .form-control {
     height: 3.625rem;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.15);
@@ -330,19 +343,23 @@
   }
 }
 
-.accordion-profile{
+.accordion-profile {
   margin-bottom: 4.5625rem;
-  .accordion-body{
+
+  .accordion-body {
     padding-left: 0;
   }
-  .accordion-item{
+
+  .accordion-item {
     border: 0;
     margin-bottom: 0.5625rem;
   }
-  .accordion-header{
+
+  .accordion-header {
     border: 0 solid #fff !important;
     box-shadow: unset !important;
-    .accordion-button{
+
+    .accordion-button {
       border: 0 !important;
       font-weight: 700;
       font-size: 1.5rem;
@@ -353,39 +370,42 @@
       background: #fff;
       outline: unset;
       box-shadow: unset;
-      &:after{
+
+      &:after {
         display: none;
       }
 
-      &[aria-expanded="true"]{
-        .fa-circle-minus{
+      &[aria-expanded="true"] {
+        .fa-circle-minus {
           display: inline-block;
         }
-        .fa-circle-plus{
+
+        .fa-circle-plus {
           display: none;
         }
       }
 
-      .fa-circle-minus{
+      .fa-circle-minus {
         display: none;
       }
     }
   }
 }
 
-.profile-work-item{
+.profile-work-item {
   width: 100%;
   @include bg;
   border-radius: 0.625rem;
   overflow: hidden;
   margin-bottom: 0.6875rem;
 
-  &:hover{
-    .profile-work-item-body{
+  &:hover {
+    .profile-work-item-body {
       opacity: 1;
     }
   }
-  &-body{
+
+  &-body {
     width: 100%;
     height: 100%;
     @include flex('c', 'c');
@@ -393,16 +413,18 @@
     background: rgba(0, 0, 0, 0.65);
     transition: 0.3s;
     opacity: 0;
-    
+
   }
-  &-title{
+
+  &-title {
     font-weight: 600;
     font-size: 0.875rem;
     letter-spacing: 0.0625rem;
     color: #FFFFFF;
     margin-bottom: 0;
   }
-  &-year{
+
+  &-year {
     font-weight: 400;
     font-size: 0.75rem;
     letter-spacing: 0.0625rem;
@@ -410,7 +432,7 @@
   }
 }
 
-.edit-btn{
+.edit-btn {
   width: 2.5rem;
   height: 2.5rem;
   background: #FFFFFF;
@@ -418,29 +440,30 @@
   @include flex('c', 'c');
   color: #1C274C;
 
-  &:hover{
+  &:hover {
     background: #c0bfbf;
   }
-  &.remove{
+
+  &.remove {
     color: #FF4343;
   }
 }
 
-.profile-work-title{
+.profile-work-title {
   font-weight: 700;
   font-size: 1.5625rem;
   letter-spacing: 0.0625rem;
   color: #000000;
 }
 
-.add-work{
+.add-work {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.0625rem;
   color: #000000;
 }
 
-.check-btn{
+.check-btn {
   height: 58px;
   width: 58px;
 }
@@ -448,95 +471,92 @@
 
 // Art-cristcs.html
 
-.art-critics-item-block{
+.art-critics-item-block {
 
-  img{
+  img {
     margin-right: 25px;
   }
 
 }
 
 
-.ARTISTS{
+.ARTISTS {
   margin-top: 70px !important;
   margin-bottom: 300px;
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
 // sign-up
 
-.sign{
+.sign {
 
-  .heading{
+  .heading {
     font-style: normal;
     font-weight: 800 !important;
-    font-size: 30px;
-    line-height: 47px;
-    letter-spacing: 1px;
+    font-size: 1.875rem;
+    letter-spacing: 0.0625rem;
     color: #000000;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
-  p{
+  p {
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 47px;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     color: #000000;
 
   }
 
-  .btn-gray{
+  .btn-gray {
     background: rgba(0, 0, 0, 0.5) !important;
     border: none !important;
-    padding: 11px 40px !important;
+    padding: 0.6875rem 2.5rem !important;
+    color: #fff;
   }
 
-  .btn-dark{
+  .btn-dark {
     padding-top: 11px !important;
     padding-bottom: 11px !important;
-    margin-right: 18px;
+    margin-right: 1.125rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 36px;
-    letter-spacing: 1px;
+    font-size: 1.375rem;
+    letter-spacing: 0.0625rem;
 
     @media (max-width: 700px) {
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem;
     }
   }
 
 
 }
 
-.btn-bottom{
+.btn-bottom {
   padding: 11px 40px !important;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 36px;
-  letter-spacing: 1px;
-  margin-bottom: 70px;
+  font-size: 1.375rem;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 4.375rem;
 }
 
 // Sign-up-avatar
 
-.Sign-up-avatar{
+.Sign-up-avatar {
   position: relative;
-  left: 80px;
+  left: 5rem;
 }
 
-.avatar{
-  width: 244px;
-  height: 244px;
+.avatar {
+  width: 15.25rem;
+  height: 15.25rem;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.05);
-  margin-top: 25px;
+  margin-top: 1.5625rem;
 }
 
 
@@ -548,55 +568,57 @@ textarea{
   cursor: pointer;
 
   img {
-    width: 59px;
-    height: 59px;
+    width: 3.6875rem;
+    height: 3.6875rem;
   }
 
   span {
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.0625rem;
     color: rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
 
 }
 
-  .select-file{
+.select-file {
   width: 100%;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  height: 58px;
+  border-radius: 0.5rem;
+  height: 3.625rem;
   @include flex('sb', 'c');
   padding-right: 0.8125rem;
   font-size: 1.125rem;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   color: rgba(0, 0, 0, 0.25);
   padding-left: 1.125rem;
 }
 
-.def-dark, .def-red{
-  height: 3.625rem;
+.def-dark, .def-red {
+  min-height: 3.625rem;
   font-weight: 600;
   font-size: 1.375rem;
   letter-spacing: 0.0625rem;
   color: #FFFFFF;
   padding: 0 2.5rem;
 }
-.def-dark{
+
+.def-dark {
   background: #000000;
 
-  &:hover{
+  &:hover {
     background: #262626;
     color: #fff;
   }
 }
-.def-red{
+
+.def-red {
   background: #FF4343;
   border: 0;
 }
@@ -605,7 +627,7 @@ textarea{
   backdrop-filter: blur(5px);
 }
 
-.remove-work-title{
+.remove-work-title {
   font-weight: 700;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -613,7 +635,7 @@ textarea{
   color: #000000;
 }
 
-.success-text-remove-work{
+.success-text-remove-work {
   font-weight: 400;
   font-size: 1.375rem;
   letter-spacing: 1px;
@@ -621,14 +643,15 @@ textarea{
   margin-top: 0.9375rem;
 }
 
-.outline-black{
+.outline-black {
   border-color: #000;
   color: #000;
 }
 
-.btn-debug{
+.btn-debug {
   position: relative;
-  span{
+
+  span {
     background: #F44343;
     border-radius: 1.3125rem;
     position: absolute;
@@ -643,7 +666,7 @@ textarea{
   }
 }
 
-.green-message{
+.green-message {
   display: none;
   position: fixed;
   right: 20px;
@@ -652,11 +675,11 @@ textarea{
   border-radius: 11px;
   padding: 1.5rem 1.25rem 0.625rem;
 
-  &.show{
+  &.show {
     display: block;
   }
 
-  .fa-xmark{
+  .fa-xmark {
     color: #FFFFFF;
     position: absolute;
     top: 10px;
@@ -665,7 +688,7 @@ textarea{
 
   }
 
-  &-title{
+  &-title {
     font-weight: 600;
     font-size: 1.25rem;
     letter-spacing: 0.0625rem;
@@ -673,7 +696,7 @@ textarea{
     margin-bottom: 0;
   }
 
-  &-subtitle{
+  &-subtitle {
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: 1px;
