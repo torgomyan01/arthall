@@ -452,3 +452,103 @@
   margin-top: 70px !important;
   margin-bottom: 300px;
 }
+
+// sign-up
+
+.sign{
+
+  .heading{
+    font-style: normal;
+    font-weight: 800 !important;
+    font-size: 30px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+
+  p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #000000;
+
+  }
+
+  .btn-gray{
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: none !important;
+    padding: 11px 40px !important;
+  }
+
+  .btn-dark{
+    padding-top: 11px !important;
+    padding-bottom: 11px !important;
+    margin-right: 18px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    
+    @media (max-width: 700px) {
+      margin-bottom: 15px;
+    }
+  }
+
+
+}
+
+.btn-bottom{
+  padding: 11px 40px !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 70px;
+}
+
+// Sign-up-avatar
+
+.Sign-up-avatar{
+  position: relative;
+  left: 80px;
+}
+
+.avatar{
+  width: 244px;
+  height: 244px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  margin-top: 25px;
+}
+
+
+.avtar-image-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img{
+    width: 59px;
+    height: 59px;
+  }
+
+  span{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+
+
+}
