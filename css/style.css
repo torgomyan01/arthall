@@ -61,6 +61,10 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.c-red {
+  color: #FF4343;
+}
+
 .container {
   max-width: 1600px !important;
 }
@@ -235,6 +239,7 @@
 .art-critics-item img {
   background: #D9D9D9;
   border-radius: 8px;
+  margin-bottom: 0.625rem;
 }
 @media (max-width: 475px) {
   .art-critics-item {
@@ -313,12 +318,15 @@
   padding-left: 1.125rem;
 }
 
+.accordion-profile {
+  margin-bottom: 4.5625rem;
+}
 .accordion-profile .accordion-body {
-  padding: 10px 0 0;
+  padding-left: 0;
 }
 .accordion-profile .accordion-item {
   border: 0;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 0.5625rem;
 }
 .accordion-profile .accordion-header {
   border: 0 solid #fff !important;
@@ -422,9 +430,6 @@
   width: 58px;
 }
 
-.art-critics-item-block {
-  margin-top: 25px;
-}
 .art-critics-item-block img {
   margin-right: 25px;
 }
@@ -464,6 +469,14 @@ textarea {
   padding: 0 2.5rem;
 }
 
+.def-dark {
+  background: #000000;
+}
+.def-dark:hover {
+  background: #262626;
+  color: #fff;
+}
+
 .def-red {
   background: #FF4343;
   border: 0;
@@ -484,10 +497,65 @@ textarea {
 .success-text-remove-work {
   font-weight: 400;
   font-size: 1.375rem;
-  line-height: 2.25rem;
   letter-spacing: 1px;
   color: #000000;
   margin-top: 0.9375rem;
+}
+
+.outline-black {
+  border-color: #000;
+  color: #000;
+}
+
+.btn-debug {
+  position: relative;
+}
+.btn-debug span {
+  background: #F44343;
+  border-radius: 1.3125rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.0625rem;
+  color: #FFFFFF;
+  padding: 0.125rem 0.4375rem;
+  transform: translate(50%, -50%);
+}
+
+.green-message {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #77BF4A;
+  border-radius: 11px;
+  padding: 1.5rem 1.25rem 0.625rem;
+}
+.green-message.show {
+  display: block;
+}
+.green-message .fa-xmark {
+  color: #FFFFFF;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.green-message-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+.green-message-subtitle {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=style.css.map */
