@@ -317,14 +317,18 @@
     color: #000000;
   }
   .form-control{
-    height: 58px;
+    height: 3.625rem;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
+    border-radius: 0.5rem;
+    padding-left: 1.125rem;
   }
 }
 
 .accordion-profile{
+  .accordion-body{
+    padding: 10px 0 0;
+  }
   .accordion-item{
     border: 0;
     margin-bottom: 1.5625rem;
@@ -451,4 +455,57 @@
 .ARTISTS{
   margin-top: 70px !important;
   margin-bottom: 300px;
+}
+
+textarea{
+  resize: none;
+}
+
+.select-file{
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  height: 58px;
+  @include flex('sb', 'c');
+  padding-right: 0.8125rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.25);
+  padding-left: 1.125rem;
+}
+
+.def-dark, .def-red{
+  height: 3.625rem;
+  font-weight: 600;
+  font-size: 1.375rem;
+  letter-spacing: 0.0625rem;
+  color: #FFFFFF;
+  padding: 0 2.5rem;
+}
+.def-red{
+  background: #FF4343;
+  border: 0;
+}
+
+.modal {
+  backdrop-filter: blur(5px);
+}
+
+.remove-work-title{
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.success-text-remove-work{
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 2.25rem;
+  letter-spacing: 1px;
+  color: #000000;
+  margin-top: 0.9375rem;
 }
