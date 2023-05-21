@@ -750,4 +750,25 @@ textarea {
   right: 3.25rem;
 }
 
+.data-input {
+  position: relative;
+  width: 100%;
+}
+.data-input:after {
+  content: "\f073";
+  font-family: FontAwesome, serif;
+  position: absolute;
+  top: 12px;
+  right: 13px;
+  font-size: 21px;
+  color: #303030;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100px;
+}
+
 /*# sourceMappingURL=style.css.map */
