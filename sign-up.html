@@ -63,7 +63,7 @@
   </div>
 
   <div class="row mt-5">
-    <div class="col-12 col-lg-6">
+    <div class="order-2 order-lg-1 col-12 col-lg-6">
       <div class="row">
         <div class="col-12">
           <div class="mb-3 def-input">
@@ -71,13 +71,13 @@
             <input type="email" class="form-control" placeholder="Ваши ФИО" id="Name" aria-describedby="emailHelp">
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
           <div class="mb-3 def-input">
             <label for="phone" class="form-label">Номер телефона</label>
             <input type="email" class="form-control" placeholder="+7 (000) 00-00-000" id="phone" aria-describedby="emailHelp">
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-sm-6">
           <div class="mb-3 def-input">
             <label for="email" class="form-label">E-mail</label>
             <input type="email" class="form-control" placeholder="mail@yandex.ru" id="email" aria-describedby="emailHelp">
@@ -156,15 +156,20 @@
     </div>
 
 
-    <div class="col-12 col-lg-6 mt-5 mt-lg-0 Sign-up-avatar">
-      <h3 class="profile-work-title">Загрузите аватар </h3>
-      <div class="d-flex justify-content-center align-items-center avatar">
-          <div class="avtar-image-title">
+    <div class="order-1 order-lg-2 col-12 col-lg-6 mb-4 mb-lg-0 ps-lg-5">
+      <label class="Sign-up-avatar ms-lg-5 mt-lg-4">
+        <span class="profile-work-title">Загрузите аватар </span>
+        <span class="d-flex justify-content-center align-items-center avatar">
+          <span class="avtar-image-title">
             <img src="./assets/images/Vector.png" alt="">
             <span>Файл в формате <br> PNG или JPG</span>
-          </div>
-      </div>
+          </span>
+      </span>
+        <input type="file" class="d-none">
+      </label>
     </div>
+
+
   </div>
 </div>
 

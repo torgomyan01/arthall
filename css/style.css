@@ -487,7 +487,7 @@ textarea {
   font-size: 1.375rem;
   letter-spacing: 0.0625rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 992px) {
   .sign .btn-dark {
     margin-bottom: 0.9375rem;
   }
@@ -504,7 +504,6 @@ textarea {
 
 .Sign-up-avatar {
   position: relative;
-  left: 5rem;
 }
 
 .avatar {
