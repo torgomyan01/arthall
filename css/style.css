@@ -157,10 +157,14 @@
 .section-title {
   font-weight: 700;
   font-size: 1.875rem;
-  line-height: 2.9375rem;
   letter-spacing: 0.0625rem;
   color: #000000;
   margin-bottom: 2.875rem;
+}
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
 
 .my-work-item {
@@ -266,6 +270,7 @@
   justify-content: start;
   align-items: start;
   margin-bottom: 0.9375rem;
+  flex-wrap: wrap;
 }
 .art-critics-item-block i {
   margin-right: 0.5625rem;
@@ -292,6 +297,15 @@
   letter-spacing: 0.0625rem;
   color: #000000;
   margin-bottom: 0;
+}
+@media (max-width: 425px) {
+  .user-profile-name {
+    font-size: 1.8rem;
+  }
+}
+
+.profile-avatar {
+  width: 6.25rem;
 }
 
 .user-profile-position {
@@ -426,12 +440,12 @@
 }
 
 .check-btn {
-  height: 58px;
-  width: 58px;
+  height: 3.625rem;
+  width: 3.625rem;
 }
 
 .art-critics-item-block img {
-  margin-right: 25px;
+  margin-right: 1.5625rem;
 }
 
 .ARTISTS {
@@ -539,6 +553,11 @@ textarea {
   color: rgba(0, 0, 0, 0.25);
   padding-left: 1.125rem;
 }
+@media (max-width: 576px) {
+  .select-file {
+    font-size: 0.8rem;
+  }
+}
 
 .def-dark, .def-red {
   min-height: 3.625rem;
@@ -636,6 +655,21 @@ textarea {
   letter-spacing: 1px;
   color: #FFFFFF;
   opacity: 0.75;
+}
+
+.nav-tabs {
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+.nav-tabs::-webkit-scrollbar {
+  width: 2px;
+  height: 0;
+  border-radius: 5px;
+}
+.nav-tabs .nav-link {
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */
