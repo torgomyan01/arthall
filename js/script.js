@@ -2,7 +2,7 @@ const { none, show } = {
     none: "d-none",
     show: 'show'
 }
-
+const Button = document.querySelectorAll('.sign .buttons .btn' )
 
 $('.change-name-user-profile').on('click', function (){
     $('.user-profile-name').addClass(none);
@@ -25,4 +25,12 @@ $('.open-green-message').on('click', function (){
     setTimeout(() => {
         $('.green-message').removeClass(show);
     }, 3000)
+})
+
+
+Button.forEach(btn =>{
+
+    btn.addEventListener('click', ()=>{
+        btn.classList.toggle('active')
+    })
 })

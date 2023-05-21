@@ -32,6 +32,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 @media (max-width: 1024px) {
   html {
     font-size: 15px;
@@ -273,7 +277,7 @@
     font-size: 1.25rem;
     letter-spacing: 0.0625rem;
     color: #000000;
-    margin-top: -5px;
+    margin-top: -0.3125rem;
   }
 
   &-block {
@@ -528,7 +532,12 @@ textarea {
     color: #fff;
   }
 
-  .btn-dark {
+  .btn-gray.active{
+    background: #000 !important;
+
+  }
+
+  .btn-sign{
     padding-top: 11px !important;
     padding-bottom: 11px !important;
     margin-right: 1.125rem;
@@ -544,6 +553,7 @@ textarea {
 
 
 }
+
 
 .btn-bottom {
   padding: 11px 40px !important;
@@ -623,6 +633,10 @@ textarea {
 
 .def-dark {
   background: #000000;
+  font-size: 22px;
+  padding: 0 40px;
+  font-weight: 600;
+  margin-top: 0.9375rem;
 
   &:hover {
     background: #262626;
@@ -681,8 +695,8 @@ textarea {
 .green-message {
   display: none;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 1.25rem;
+  bottom: 1.25rem;
   background: #77BF4A;
   border-radius: 11px;
   padding: 1.5rem 1.25rem 0.625rem;
@@ -694,8 +708,8 @@ textarea {
   .fa-xmark {
     color: #FFFFFF;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625rem;
+    right: 0.625rem;
     cursor: pointer;
 
   }
@@ -721,13 +735,13 @@ textarea {
   flex-wrap: nowrap;
   width: 100%;
   overflow-x: auto;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 
 
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 0.125rem;
     height: 0;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
   }
 
   .nav-link{
