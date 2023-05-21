@@ -32,3 +32,9 @@ Button.on('click', function (){
     Button.removeClass(active);
     $(this).addClass(active);
 })
+
+
+$('.select-image-crete-work').on('change', function (e){
+    const files = e.target.files;
+    $(this).prev().prev('span').text(files[0] ? files[0]?.name : 'Выберите изображение в формате PNG или JPG')
+})
