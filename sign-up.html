@@ -18,6 +18,7 @@
 
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/imask.js"></script>
   <script src="js/jquery.min.js"></script>
 
   <title>Sign-up</title>
@@ -55,104 +56,276 @@
     <h3 class="heading">РЕГИСТРАЦИЯ</h3>
     <p class="text" >Зарегистрироваться как</p>
     <div class="buttons">
-      <button type="button"  class="btn btn-dark btn-gray btn-sign">Художник</button>
+      <button type="button"  class="btn btn-dark btn-gray btn-sign active">Художник</button>
       <button type="button" class="btn btn-dark btn-gray btn-sign">Искусствовед</button>
       <button type="button" class="btn btn-dark btn-gray btn-sign">Выставочное пространство</button>
       <button type="button" class="btn btn-dark btn-gray btn-sign">Арт-диллер</button>
     </div>
   </div>
 
-  <div class="row mt-5">
+
+  <div class="row mt-5" >
     <div class="order-2 order-lg-1 col-12 col-lg-6">
-      <div class="row">
-        <div class="col-12">
-          <div class="mb-3 def-input">
-            <label for="phone" class="form-label">Фамилия Имя</label>
-            <input type="email" class="form-control" placeholder="Ваши ФИО" id="Name" aria-describedby="emailHelp">
+      <div class="sign-up-tab" data-tabname="Художник">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 def-input">
+              <label for="phone" class="form-label">Фамилия Имя</label>
+              <input type="email" class="form-control" placeholder="Ваши ФИО" id="Name" aria-describedby="emailHelp">
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="mb-3 def-input">
-            <label for="phone" class="form-label">Номер телефона</label>
-            <input type="email" class="form-control" placeholder="+7 (000) 00-00-000" id="phone" aria-describedby="emailHelp">
+          <div class="col-12 col-sm-6">
+            <div class="mb-3 def-input">
+              <label for="phone" class="form-label">Номер телефона</label>
+              <input type="email" class="form-control" placeholder="+7 (000) 00-00-000" id="phone" aria-describedby="emailHelp">
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="mb-3 def-input">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" placeholder="mail@yandex.ru" id="email" aria-describedby="emailHelp">
+          <div class="col-12 col-sm-6">
+            <div class="mb-3 def-input">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="mail@yandex.ru" id="email" aria-describedby="emailHelp">
+            </div>
           </div>
-        </div>
-        <div class="col-12">
-          <div class="accordion accordion-profile">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                  О себе
-                  <i class="fa-solid fa-circle-minus ms-2"></i>
-                  <i class="fa-solid fa-circle-plus ms-2"></i>
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <div class="mb-3 def-input">
-                    <textarea class="form-control" placeholder="Перечислите выставки в которых участвовали ваши работы" style="height: 100px"></textarea>
+          <div class="col-12">
+            <div class="accordion accordion-profile">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    О себе
+                    <i class="fa-solid fa-circle-minus ms-2"></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Расскажите о себе:  где родились, учились, ваша квалификация, предпочтения и увлечения" style="height: 100px"></textarea>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Exhibitions" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Выставки
-                  <i class="fa-solid fa-circle-minus ms-2 "></i>
-                  <i class="fa-solid fa-circle-plus ms-2"></i>
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo-Exhibitions" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <div class="mb-3 def-input">
-                    <textarea class="form-control" placeholder="Перечислите выставки в которых участвовали ваши работы" style="height: 100px"></textarea>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Exhibitions" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Выставки
+                    <i class="fa-solid fa-circle-minus ms-2 "></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo-Exhibitions" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Перечислите выставки в которых участвовали ваши работы" style="height: 100px"></textarea>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Awards" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Награды
-                  <i class="fa-solid fa-circle-minus ms-2 "></i>
-                  <i class="fa-solid fa-circle-plus ms-2"></i>
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo-Awards" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <div class="mb-3 def-input">
-                    <textarea class="form-control" placeholder="Перечислите выставки в которых участвовали ваши работы" style="height: 100px"></textarea>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Awards" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Награды
+                    <i class="fa-solid fa-circle-minus ms-2 "></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo-Awards" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Перечислите полученные вами награды или номинации" style="height: 100px"></textarea>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Sales" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Продажи
-                  <i class="fa-solid fa-circle-minus ms-2 "></i>
-                  <i class="fa-solid fa-circle-plus ms-2"></i>
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo-Sales" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <div class="mb-3 def-input">
-                    <textarea class="form-control" placeholder="Перечислите выставки в которых участвовали ваши работы" style="height: 100px"></textarea>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Sales" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Продажи
+                    <i class="fa-solid fa-circle-minus ms-2 "></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo-Sales" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Расскажите о проведенных сделках" style="height: 100px"></textarea>
+                    </div>
                   </div>
                 </div>
               </div>
+              <button type="button" class="btn btn-dark def-dark mt-5">Зарегистрирооватьтся и сформировать CV</button>
             </div>
-            <button type="button" class="btn btn-dark def-dark mt-5">Зарегистрирооватьтся и сформировать CV</button>
           </div>
         </div>
       </div>
+      <div class="sign-up-tab d-none" data-tabname="Искусствовед">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 def-input">
+              <label for="Name-two" class="form-label">Фамилия Имя</label>
+              <input type="email" class="form-control" placeholder="Ваши ФИО" id="Name-two" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="mb-3 def-input">
+              <label for="phone-two" class="form-label">Номер телефона</label>
+              <input type="email" class="form-control" placeholder="+7 (000) 00-00-000" id="phone-two" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="mb-3 def-input">
+              <label for="email-two" class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="mail@yandex.ru" id="email-two" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="accordion accordion-profile">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne-two" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    О себе
+                    <i class="fa-solid fa-circle-minus ms-2"></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne-two" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Расскажите о себе:  где родились, учились, ваша квалификация, предпочтения и увлечения" style="height: 100px"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Awards-two" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Награды
+                    <i class="fa-solid fa-circle-minus ms-2 "></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo-Awards-two" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Перечислите выставки в которых участвовали ваши работы" style="height: 100px"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-dark def-dark mt-5">Зарегистрирооватьтся и сформировать CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sign-up-tab d-none" data-tabname="Выставочное пространство">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 def-input">
+              <label for="Name-tree" class="form-label">Название</label>
+              <input type="email" class="form-control" placeholder="Название" id="Name-tree" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3 def-input">
+              <label for="phone-tree" class="form-label">Телефон администтрации</label>
+              <input type="email" class="form-control" placeholder="+7 (000) 00-00-000" id="phone-tree" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3 def-input">
+              <label for="time-work-tree" class="form-label">Часы работы</label>
+              <input type="time" class="form-control" placeholder="Часы работы" id="time-work-tree" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="accordion accordion-profile">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne-tree" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    Описание
+                    <i class="fa-solid fa-circle-minus ms-2"></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne-tree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Описание выставочного пространства, его история, характеристика" style="height: 100px"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <button type="button" class="btn btn-dark def-dark mt-5">Зарегистрирооватьтся</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sign-up-tab d-none" data-tabname="Арт-диллер">
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 def-input">
+              <label for="Name-foo" class="form-label">Фамилия Имя</label>
+              <input type="email" class="form-control" placeholder="Ваши ФИО" id="Name-foo" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="mb-3 def-input">
+              <label for="phone-foo" class="form-label">Номер телефона</label>
+              <input type="email" class="form-control" placeholder="+7 (000) 00-00-000" id="phone-foo" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="mb-3 def-input">
+              <label for="email-foo" class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="mail@yandex.ru" id="email-foo" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="accordion accordion-profile">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne-foo" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    О себе
+                    <i class="fa-solid fa-circle-minus ms-2"></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne-foo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Расскажите о себе:  где родились, учились, ваша квалификация, предпочтения и увлечения" style="height: 100px"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo-Awards-foo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Продажи
+                    <i class="fa-solid fa-circle-minus ms-2 "></i>
+                    <i class="fa-solid fa-circle-plus ms-2"></i>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo-Awards-foo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <div class="mb-3 def-input">
+                      <textarea class="form-control" placeholder="Расскажите о проведенных сделках" style="height: 100px"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-dark def-dark mt-5">Зарегистрирооватьтся и сформировать CV</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
 
@@ -162,15 +335,21 @@
         <span class="d-flex justify-content-center align-items-center avatar">
           <span class="avtar-image-title">
             <img src="./assets/images/Vector.png" alt="">
-            <span>Файл в формате <br> PNG или JPG</span>
+            <span class="sign-up-image-text">Файл в формате <br> PNG или JPG</span>
           </span>
-      </span>
-        <input type="file" class="d-none" accept="image/png, image/gif, image/jpeg" >
+        </span>
+        <input type="file" class="d-none sign-up-image" accept="image/png, image/gif, image/jpeg" >
       </label>
     </div>
 
 
   </div>
+
+
+
+
+
+
 </div>
 
 
